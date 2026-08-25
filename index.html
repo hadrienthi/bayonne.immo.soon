@@ -4,106 +4,48 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Bayonne.immo, bientôt en ligne</title>
-<meta name="description" content="L'observatoire des prix immobiliers de Bayonne ouvre bientôt. Ventes réelles enregistrées par l'État, quartier par quartier, en accès libre." />
+<meta name="description" content="Estimez très prochainement la valeur de votre bien à Bayonne en 2 minutes." />
 <link rel="canonical" href="https://bayonne.immo/" />
 <meta property="og:title" content="Bayonne.immo, bientôt en ligne" />
-<meta property="og:description" content="L'observatoire des prix immobiliers de Bayonne ouvre bientôt. Ventes réelles enregistrées par l'État, quartier par quartier, en accès libre." />
+<meta property="og:description" content="Estimez très prochainement la valeur de votre bien à Bayonne en 2 minutes." />
 <meta property="og:url" content="https://bayonne.immo/" />
 <meta property="og:type" content="website" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23FAF5EC'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23A31621'/%3E%3C/svg%3E" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23F4F7F6'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%230E6E8C'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
 :root{
---cream:#FAF5EC;--ink:#221B16;--red:#A31621;
---hairline:rgba(34,27,22,0.14);
---text-secondary:rgba(34,27,22,0.75);--text-tertiary:rgba(34,27,22,0.5);
---serif:'Instrument Serif',Georgia,serif;--mono:'Spline Sans Mono',ui-monospace,monospace;
+--ecume:#F4F7F6;--nuit:#16232B;--ocean:#0E6E8C;--ocean-dark:#0A5169;
+--hairline:rgba(22,35,43,0.14);
+--text-secondary:rgba(22,35,43,0.72);
+--serif:'Fraunces',Georgia,serif;--sans:'Public Sans',-apple-system,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-::selection{background:var(--red);color:var(--cream)}
-body{font-family:'Archivo',-apple-system,sans-serif;background:var(--cream);color:var(--ink);min-height:100vh;display:flex;flex-direction:column}
-.wrap{width:100%;max-width:680px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
-header{padding:26px 0 0}
-.wordmark{font-family:var(--serif);font-size:30px;letter-spacing:0.015em;color:var(--ink);text-decoration:none}
-.wm-dot{display:inline-block;width:0.2em;height:0.2em;background:var(--red);border-radius:50%;margin:0 0.05em 0.05em 0.06em}
-.wm-ext{color:var(--red)}
-main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:clamp(36px,7vh,72px) 0}
-.kicker{display:inline-block;border:1px solid var(--red);border-radius:999px;padding:7px 16px;font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--red);margin-bottom:26px}
-h1{font-family:var(--serif);font-weight:400;font-size:clamp(30px,5.4vw,44px);line-height:1.16;letter-spacing:0.015em;margin-bottom:18px}
-h1 em{font-style:italic;color:var(--red)}
-.devise{font-family:var(--serif);font-style:italic;font-size:clamp(17px,2.4vw,20px);color:var(--text-secondary);margin-bottom:26px}
-p.lead{font-size:16px;line-height:1.65;color:var(--text-secondary);max-width:56ch;margin-bottom:14px}
-p.lead a{color:var(--red);text-decoration:none;border-bottom:1px solid rgba(163,22,33,0.35)}
-figure{margin:clamp(28px,5vh,44px) 0}
-figure svg{display:block;width:100%;height:auto}
-.contact{border-top:1px solid var(--hairline);padding-top:26px}
-.contact .lbl{font-family:var(--mono);font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
-.btn-mail{display:inline-block;background:var(--red);color:var(--cream);font-weight:600;font-size:15px;padding:13px 24px;border-radius:999px;text-decoration:none}
-.btn-mail:hover{background:#7E0F18}
-footer{padding:26px 0 30px;border-top:1px solid var(--hairline)}
-footer p{font-family:var(--mono);font-size:11px;line-height:1.7;color:var(--text-tertiary)}
-footer a{color:var(--text-tertiary)}
+::selection{background:var(--ocean);color:var(--ecume)}
+body{font-family:var(--sans);background:var(--ecume);color:var(--nuit);min-height:100vh;display:flex;flex-direction:column}
+.wrap{width:100%;max-width:640px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+header{padding:28px 0 0}
+.wordmark{font-family:var(--serif);font-size:30px;letter-spacing:0.01em;color:var(--nuit)}
+.wm-dot{display:inline-block;width:0.2em;height:0.2em;background:var(--ocean);border-radius:50%;margin:0 0.05em 0.05em 0.06em}
+.wm-ext{color:var(--ocean)}
+main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,10vh,90px) 0}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(30px,5.6vw,46px);line-height:1.22;letter-spacing:0.005em;margin-bottom:38px}
+h1 em{font-style:italic;color:var(--ocean)}
+.btn-mail{display:inline-block;background:var(--ocean);color:var(--ecume);font-weight:600;font-size:15px;padding:14px 26px;border-radius:999px;text-decoration:none}
+.btn-mail:hover{background:var(--ocean-dark)}
+footer{padding:24px 0 30px}
+footer p{font-size:12px;color:var(--text-secondary)}
 </style>
 </head>
 <body>
 <div class="wrap"><header><span class="wordmark">Bayonne<span class="wm-dot"></span><span class="wm-ext">IMMO</span></span></header></div>
 <main>
 <div class="wrap">
-<span class="kicker">Ouverture prochaine</span>
-<h1>Les <em>vrais</em> prix de l'immobilier à Bayonne arrivent bientôt.</h1>
-<p class="devise">L'immobilier bayonnais aura bientôt son adresse.</p>
-<p class="lead">Un observatoire des prix fondé sur les ventes réelles enregistrées par l'État, quartier par quartier, du Grand Bayonne à Saint-Esprit.</p>
-<figure aria-hidden="true">
-<svg viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" role="img">
-<!-- flèches de la cathédrale -->
-<g fill="#221B16">
-<path d="M96 118 L96 58 L106 30 L116 58 L116 118 Z" />
-<path d="M132 118 L132 58 L142 30 L152 58 L152 118 Z" />
-</g>
-<line x1="106" y1="30" x2="106" y2="20" stroke="#221B16" stroke-width="2" />
-<line x1="142" y1="30" x2="142" y2="20" stroke="#221B16" stroke-width="2" />
-<!-- façades des quais, volets rouges -->
-<g>
-<rect x="196" y="66" width="64" height="52" fill="none" stroke="#221B16" stroke-width="2" />
-<rect x="206" y="76" width="12" height="16" fill="#A31621" />
-<rect x="228" y="76" width="12" height="16" fill="#A31621" />
-<rect x="276" y="52" width="70" height="66" fill="#221B16" />
-<rect x="288" y="64" width="12" height="16" fill="#FAF5EC" />
-<rect x="312" y="64" width="12" height="16" fill="#FAF5EC" />
-<rect x="288" y="90" width="12" height="16" fill="#FAF5EC" />
-<rect x="312" y="90" width="12" height="16" fill="#FAF5EC" />
-<rect x="362" y="70" width="60" height="48" fill="none" stroke="#221B16" stroke-width="2" />
-<rect x="372" y="80" width="11" height="15" fill="#A31621" />
-<rect x="392" y="80" width="11" height="15" fill="#A31621" />
-<rect x="438" y="58" width="66" height="60" fill="none" stroke="#221B16" stroke-width="2" />
-<rect x="448" y="68" width="12" height="16" fill="#A31621" />
-<rect x="470" y="68" width="12" height="16" fill="#A31621" />
-<rect x="448" y="94" width="12" height="16" fill="#A31621" />
-<rect x="470" y="94" width="12" height="16" fill="#A31621" />
-<rect x="520" y="76" width="56" height="42" fill="none" stroke="#221B16" stroke-width="2" />
-<rect x="530" y="86" width="11" height="14" fill="#A31621" />
-<rect x="550" y="86" width="11" height="14" fill="#A31621" />
-</g>
-<!-- quai -->
-<line x1="0" y1="118" x2="680" y2="118" stroke="#221B16" stroke-width="1.5" stroke-opacity="0.5" />
-<!-- la Nive -->
-<g stroke="#221B16" fill="none" stroke-width="2" stroke-linecap="round">
-<path d="M0 144 Q 42 132 85 144 T 170 144 T 255 144 T 340 144 T 425 144 T 510 144 T 595 144 T 680 144" stroke-opacity="0.7" />
-<path d="M0 168 Q 42 156 85 168 T 170 168 T 255 168 T 340 168 T 425 168 T 510 168 T 595 168 T 680 168" stroke-opacity="0.4" />
-<path d="M0 190 Q 42 178 85 190 T 170 190 T 255 190 T 340 190 T 425 190 T 510 190 T 595 190 T 680 190" stroke-opacity="0.18" />
-</g>
-</svg>
-</figure>
-<div class="contact">
-<p class="lbl">Nous écrire</p>
-<a class="btn-mail" href="mailto:contact@bayonne.immo">contact@bayonne.immo</a>
-</div>
+<h1>Estimez <em>très prochainement</em> la valeur de votre bien en 2 minutes.</h1>
+<p><a class="btn-mail" href="mailto:contact@bayonne.immo">contact@bayonne.immo</a></p>
 </div>
 </main>
-<div class="wrap"><footer>
-<p>Bayonne.immo · observatoire indépendant des prix immobiliers de Bayonne. Données à venir issues des ventes notariées publiées par l'État (DVF, Licence Ouverte 2.0).</p>
-</footer></div>
+<div class="wrap"><footer><p>Bayonne.immo</p></footer></div>
 </body>
 </html>
